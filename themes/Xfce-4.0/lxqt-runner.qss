@@ -1,0 +1,125 @@
+/* Panel */
+
+#panel 
+{
+	background:	#eae7e4;
+	border:		1px solid #1a1a1a;
+	border-radius:	1px;
+}
+
+/* Buttons */
+
+QToolButton::menu-indicator 
+{
+	image:		none;
+}
+
+#closeButton 
+{
+	qproperty-icon:	url(lxqt-runner/close.svg);
+	margin:		2px;
+}
+
+#closeButton:hover 
+{
+	background:	#ffffff;
+	border:		1px solid #1a1a1a;
+	border-radius:	1px;
+}
+
+#closeButton:pressed 
+{
+	background:	#ffffff;
+	border:		1px solid #aaa29a;
+	border-radius:	1px;
+	padding:	3px;
+}
+
+#actionButton 
+{
+	qproperty-icon:	url(lxqt-runner/down-arrow.svg);
+	margin:		2px;
+}
+
+#actionButton:hover 
+{
+	background:	#ffffff;
+	border:		1px solid #aaa29a;
+	border-radius:	1px;
+}
+
+#actionButton:pressed 
+{
+	background:	#ffffff;
+	border:		1px solid #aaa29a;
+	border-radius:	1px;
+	padding:	3px;
+}
+
+
+/* Command Box */
+
+QLineEdit 
+{
+	color:		#1a1a1a;
+	background:	#ffffff;
+	border:		1px solid #aaa29a;
+	border-radius:	1px;
+	padding:	6px;
+}
+
+/*
+ *Search results list
+ */
+
+/* The list doesn't seem to be stylable completely; so, we left it to the widget style. */
+
+#commandList {
+    border: none;
+    /*background: rgba(0, 0, 0, 50%);
+    alternate-background-color: #3c3c3c;
+    color: white;*/
+}
+
+/*#commandList::item {
+}
+
+#commandList::item:selected {
+}
+
+#commandList::item::hover {
+}*/
+
+/* Menu */
+
+QMenu
+{
+        border:                 1px solid #1a1a1a;
+        background:             #eae7e4;
+        padding:                1px;
+}
+
+#MainMenu QMenu::item
+{
+        border:                 1px solid transparent;
+        border-radius:          1px;
+        
+        padding-left:           8px;
+        padding-right:          20px;
+        padding-top:            2px;
+        padding-bottom:         2px;
+}
+
+#MainMenu QMenu::item:selected
+{
+        background-color:       qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
+        color:                  #ffffff;
+        border-top:             2px solid #7d7da6;
+        border-bottom:          2px solid #62627e;
+        border-left:            2px solid #7d7da6;
+        border-right:           2px solid #7d7da6;
+        border-radius:          1px;
+
+        margin-left:            0px;
+        padding-left:           7px;
+}
